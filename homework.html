@@ -14,10 +14,29 @@
         .first-container{
             border: 5px solid rgb(0, 0, 0);
             border-radius: 5%;
-
         }
-
-
+        .first-column{
+            height: 400px;
+            background-color: green;
+        }
+        .second-column{
+            background-color: blue;
+        }
+        .third-column{
+            flex-direction: column;
+        }
+        .third-column-1{
+            background-color: yellow;
+        }
+        .third-column-2{
+            background-color: rgb(255, 255, 79);
+        }
+        .third-column-3{
+            background-color: rgb(255, 255, 157);
+        }
+        .card-container{
+            display: flex;
+        }
     </style>
   </head>
   <body>
@@ -39,35 +58,88 @@
       </nav>
     <!-- NavBar -->
     <!-- Exercise 1 -->
-      <div class="container first-container">
-        <div class="row">
-            <div class="col-xl-fluid">
+      <div class="container">
+        <div class="row ">
+            <div class="col-6 first-column">
                 <p>First Column <br/>
                     Height 400px;<br/>
                     Green Background<br/>
                     Text centered</p>
             </div>
-            <div class="col-xl-fluid">
-                <p>Second Column <br/>
-                    Text to the bottom<br/>
-                    Bold, Blueish<br/>
-                    background</p>
-            </div>
-            <div class="row">            
-                <div class="col-xl-fluid">
-                    <p> Third Column Part 1</p>
-                </div>
-                <div class="col-xl-fluid">
-                    <p> Third Column Part 2</p>
-                </div>
-                <div class="col-xl-fluid">
-                    <p> Third Column Part 3</p>
-                </div>
+            <div class="col-6 d-flex">
+                
+                    <div class="col-4 d-flex flex-grow-1 second-column">
+                        <p>Second Column </p>
+                    </div>
+                     <div class="col-8 d-flex third-column">
+                         <div class="third-column-1 col-4">
+                                    <p>Third Column Part 1</p>
+                         </div>
+                         <div class="third-column-2 col-4">
+                                    <p> Third Column Part 2</p>
+                         </div>
+                         <div class="third-column-3 col-4">
+                                    <p> Third Column Part 3</p>
+                        </div>
+                     </div>
+                            
             </div>
         </div>
       </div>
 
     <!-- Exercise 1 -->
+    <!-- Exercise 2 -->
+
+      <div class="container">
+          <div class="row d-flex">
+            <div class="col-12">
+                <h2 style="text-align: center;">Exercise 2</h2>
+                <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus praesentium repellendus ipsa debitis nemo eligendi. Veniam aliquam ab, illo deleniti ratione, laudantium placeat non porro repudiandae reprehenderit, voluptate magni sequi.</p>
+            </div>
+            <div class="col-12 card-container d-flex justify-content-center">
+                <div class="card" >
+                    <div class="card-body">
+                      <h5 class="card-title">Free</h5>
+                      <p><span>$0 / mo</span><br/>
+                        10 users included<br/>
+                        2GB of Storage<br/>
+                        Email Support<br/>
+                        Help center access<br/>
+                    </p>
+                      <a href="#" class="btn btn-primary">Sign up for free</a>
+                    </div>
+                  </div>
+                  <div class="card mr-2 ml-2" >
+                    <div class="card-body">
+                      <h5 class="card-title">Pro</h5>
+                      <p><span>$15 / mo</span><br/>
+                        20 users included<br/>
+                        10GB of Storage<br/>
+                        Priority Email Support<br/>
+                        Help center access<br/>
+                    </p>
+                      <a href="#" class="btn btn-primary">Get started</a>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="card-body">
+                      <h5 class="card-title">Enterprise</h5>
+                      <p><span>$15 / mo</span><br/>
+                        20 users included<br/>
+                        10GB of Storage<br/>
+                        Priority Email Support<br/>
+                        Help center access<br/>
+                    </p>
+                      <a href="#" class="btn btn-primary">Contact Us</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+      </div>
+
+
+    <!-- Exercise 2 -->
 
     
 
