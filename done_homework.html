@@ -1,100 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Homework Day 18</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <style>
-        .first-container{
-            border: 5px solid rgb(0, 0, 0);
-            border-radius: 5%;
-        }
-        .first-column{
-            height: 400px;
-            background-color: green;
-        }
-        .second-column{
-            background-color: blue;
-        }
-        .third-column{
-            flex-direction: column;
-        }
-        .third-column-1{
-            background-color: yellow;
-        }
-        .third-column-2{
-            background-color: rgb(255, 255, 79);
-        }
-        .third-column-3{
-            background-color: rgb(255, 255, 157);
-        }
-        .card-container{
-            display: flex;
-        }
+  <title>Hello, world!</title>
 
-            .first-column {
-          height: 400px;
-          padding: 15%;
-          text-align: center;
-          border-top-left-radius: 50px;
-          border-bottom-left-radius: 50px;
-          border: 2px solid black;
-        }
+  <!-- Style -->
 
-        .second-column {
-          padding-bottom: 5%;
-          border-top: 2px solid black;
-          border-bottom: 2px solid black;
-        }
+  <style>
+    .first-column {
+      height: 400px;
+      padding: 15%;
+      text-align: center;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border: 2px solid black;
+    }
 
-        .third-column-first-row {
-          border-top-right-radius: 50px;
-          border-top: 2px solid black;
-          border-right: 2px solid black;
-          background-color: rgb(245, 245, 158);
-        }
+    .second-column {
+      padding-bottom: 5%;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
 
-        .third-column-second-row {
+    .third-column-first-row {
+      border-top-right-radius: 50px;
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      background-color: rgb(245, 245, 158);
+    }
 
-          border-right: 2px solid black;
-          background-color: rgb(247, 247, 78);
-        }
+    .third-column-second-row {
 
-        .third-column-third-row {
-          border-bottom-right-radius: 50px;
-          border-bottom: 2px solid black;
-          border-right: 2px solid black;
-          background-color: rgb(245, 245, 0);
-        }
-    </style>
-  </head>
-  <body>
-    
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          </div>
+      border-right: 2px solid black;
+      background-color: rgb(247, 247, 78);
+    }
+
+    .third-column-third-row {
+      border-bottom-right-radius: 50px;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+      background-color: rgb(245, 245, 0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
         </div>
       </div>
-    </nav>
-    <!-- NavBar -->
-    <div class="container">
-    <!-- Exercise 1 --> 
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <div class="container mt-5">
+    <!-- Exercise 1 -->
+
     <section>
+      <h1 class="display-4 text-muted text-center mb-5">Exercise 1</h1>
+      <p class="lead text-center mt-5 mb-5">Recreate this table just using bs4 classes or styling without adding
+        removing any dom element.</p>
       <div class="row">
         <div
           class="col-xs-12 col-md-6 bg-success d-flex align-items-center justify-content-center text-light first-column">
@@ -125,67 +109,79 @@
 
     </section>
 
-    <!-- Exercise 1 -->
+    <!-- Exercise 1 End -->
     <!-- Exercise 2 -->
 
-      <div class="container">
-          <div class="row d-flex">
-            <div class="col-12">
-                <h2 style="text-align: center;">Exercise 2</h2>
-                <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus praesentium repellendus ipsa debitis nemo eligendi. Veniam aliquam ab, illo deleniti ratione, laudantium placeat non porro repudiandae reprehenderit, voluptate magni sequi.</p>
-            </div>
-            <div class="col-12 card-container d-flex justify-content-center">
-                <div class="card" >
-                    <div class="card-body">
-                      <h5 class="card-title">Free</h5>
-                      <hr>
-                      <p><span>$0 / mo</span><br/>
-                        10 users included<br/>
-                        2GB of Storage<br/>
-                        Email Support<br/>
-                        Help center access<br/>
-                    </p>
-                      <a href="#" class="btn btn-primary">Sign up for free</a>
-                    </div>
-                  </div>
-                  <div class="card mr-4 ml-4" >
-                    <div class="card-body">
-                      <h5 class="card-title">Pro</h5>
-                      <hr>
-                      <p><span>$15 / mo</span><br/>
-                        20 users included<br/>
-                        10GB of Storage<br/>
-                        Priority Email Support<br/>
-                        Help center access<br/>
-                    </p>
-                      <a href="#" class="btn btn-primary">Get started</a>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <div class="card-body">
-                      <h5 class="card-title">Enterprise</h5>
-                      <hr>
-                      <p><span>$15 / mo</span><br/>
-                        20 users included<br/>
-                        10GB of Storage<br/>
-                        Priority Email Support<br/>
-                        Help center access<br/>
-                    </p>
-                      <a href="#" class="btn btn-primary">Contact Us</a>
-                    </div>
-                  </div>
-            </div>
-          </div>
 
-      </div>
-    <!-- Exercise 2 -->
-    <!-- Exercise 3 -->
     <section>
-      
+
+      <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 2</h1>
+      <p class="lead text-center mt-5 mb-5">Create a pricing table to sell your product!</p>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="card text-center">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+              <h1 class="card-title display-6 text-center mb-5 mt-5">0€ <span class="text-muted">/ mo</span> </h1>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-bottom-0 text-center">10 users incldued</li>
+                <li class="list-group-item border-bottom-0 text-center">2 GB of storage</li>
+                <li class="list-group-item border-bottom-0 text-center">Email support</li>
+                <li class="list-group-item border-bottom-0 text-center">Help center access</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100">Sign up for free</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card text-center">
+            <h5 class="card-header">Pro</h5>
+            <div class="card-body">
+              <h1 class="card-title display-6 text-center mb-5 mt-5">15€ <span class="text-muted">/ mo</span> </h1>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-bottom-0 text-center">20 users incldued</li>
+                <li class="list-group-item border-bottom-0 text-center">10 GB of storage</li>
+                <li class="list-group-item border-bottom-0 text-center">Priority email support</li>
+                <li class="list-group-item border-bottom-0 text-center">Help center access</li>
+              </ul>
+              <button class="btn btn-primary w-100">Get Started</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card text-center">
+            <h5 class="card-header">Enterprise</h5>
+            <div class="card-body">
+              <h1 class="card-title display-6 text-center mb-5 mt-5">29€ <span class="text-muted">/ mo</span> </h1>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-bottom-0 text-center">30 users incldued</li>
+                <li class="list-group-item border-bottom-0 text-center">15 GB of storage</li>
+                <li class="list-group-item border-bottom-0 text-center">Phone and email support</li>
+                <li class="list-group-item border-bottom-0 text-center">Help center access</li>
+              </ul>
+              <button class="btn btn-primary w-100">Contact us</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Exercise 2 End -->
+
+    <!-- Exercise 3 -->
+
+    <section>
+      <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 3</h1>
+      <p class="lead text-center mt-5 mb-5">And this could be the video part of your website!</p>
+
       <div class="row">
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -202,7 +198,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -219,7 +215,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -236,7 +232,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -253,7 +249,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -270,7 +266,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -287,7 +283,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -304,7 +300,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -321,7 +317,7 @@
         </div>
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="card">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="card-img" class="card-img-top">
+            <img src="http://placehold.it/300" alt="card-img" class="card-img-top">
             <div class="card-body">
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias eius
                 provident maiores sapiente repellat officia. Facilis laborum mollitia inventore?</p>
@@ -340,12 +336,11 @@
       </div>
     </section>
 
-
-
     <!-- Exercise 3  End-->
     <!-- Exercise 4 -->
     <section>
-      
+      <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 4</h1>
+      <p class="lead text-center mt-5 mb-5">Structure this section as a blog.</p>
       <div class="row">
 
         <div class="col-sm-12 col-md-8">
@@ -354,7 +349,7 @@
             <h5 class="display-5 mt-3" style="margin-left:20px;">Secondary Text</h5>
           </div>
           <div class="card mt-5 mb-5">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="blog-img-cover" class="card-img-top">
+            <img src="http://placehold.it/750x300" alt="blog-img-cover" class="card-img-top">
             <div class="card-body">
               <h2 class="card-title">Post Title</h2>
               <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum assumenda, debitis
@@ -367,7 +362,7 @@
             </div>
           </div>
           <div class="card mt-5 mb-5">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="blog-img-cover" class="card-img-top">
+            <img src="http://placehold.it/750x300" alt="blog-img-cover" class="card-img-top">
             <div class="card-body">
               <h2 class="card-title">Post Title</h2>
               <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum assumenda, debitis
@@ -380,7 +375,7 @@
             </div>
           </div>
           <div class="card mt-5 mb-5">
-            <img src=" https://images.unsplash.com/photo-1630522791300-ba628fef4d34?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="blog-img-cover" class="card-img-top">
+            <img src="http://placehold.it/750x300" alt="blog-img-cover" class="card-img-top">
             <div class="card-body">
               <h2 class="card-title">Post Title</h2>
               <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum assumenda, debitis
@@ -468,7 +463,9 @@
 
     <!-- Exercise 5 -->
     <section class="mb-5">
-       <hr class="mb-5 mt-5">
+      <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 5</h1>
+      <p class="lead text-center mt-5 mb-5">Footer time! Never underestimate the power of the footers 😎</p>
+      <hr class="mb-5 mt-5">
       <footer>
         <div class="row">
           <div class="col-sm-12 col-md-4">
@@ -505,14 +502,24 @@
       </footer>
     </section>
     <!-- Exercise 5 End-->
+
   </div>
-    
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    
-  </body>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
-
